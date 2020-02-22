@@ -19,7 +19,11 @@ public class Main {
             saxParser.parse(input, handler);
 
             // Display the Holiday objects created
-            
+            for (Holiday h : handler.getHolidays()) {
+                // Print the values for each Holiday in the list
+                System.out.println(h.values());
+            }
+
 
 
 
